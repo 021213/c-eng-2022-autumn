@@ -1,0 +1,32 @@
+#include<iostream>
+
+int main(int argc, char* argv[])
+{
+	{
+		int a = 0;
+		loopBeg:
+		std::cout << "BANANA " << a << std::endl;
+		if (++a < 10)
+		{
+			goto loopBeg;
+		}
+	}
+	
+	{
+		int a = 0;
+		while(++a < 10)
+		{
+			std::cout << "BANANA " << a << std::endl;
+		}
+	}
+
+	{
+		int a = 0;
+		while(++a < 10)
+		{
+			std::cout << "BANANA " << a << std::endl;		
+		}
+	}
+
+	return EXIT_SUCCESS;
+}
